@@ -1,0 +1,7 @@
+
+#M
+
+#L
+LOTE_GERAL = []
+LISTA_PECA = []
+LISTA_RESERVA = []
