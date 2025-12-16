@@ -1,5 +1,4 @@
-'''
-from codigo.Comerciante import Comerciante
+
 from codigo.Const import LISTA_PECA
 
 class Cadastrar:
@@ -21,15 +20,12 @@ class Cadastrar:
         print()
 
         peca = {
-            'name': item,
-            'região': classificador,
-            'valor': valor,
-            'lote': lote
+            'Produto': item,
+            'Regiao': classificador,
+            'Valor': valor,
+            'Lote': lote[0]
         }
 
         LISTA_PECA.append(peca.copy())
-        print('Produto cadastrado com sucesso!')
-        menu_comerciante = Comerciante()
-        menu_comerciante.run()
-        print()
-'''
+        print('\nProduto cadastrado com sucesso!')
+

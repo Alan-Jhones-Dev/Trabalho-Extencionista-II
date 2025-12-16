@@ -2,6 +2,6 @@
 #M
 
 #L
-LOTE_GERAL = []
+LOTE_GERAL = [0]
 LISTA_PECA = []
 LISTA_RESERVA = []

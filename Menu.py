@@ -13,12 +13,11 @@ class Menu:
 
             menu_option = int(input('>>'))
             if menu_option == 1:
-                # senha
-                login_comerciante = Comerciante()
-                login_comerciante.run()
+                #password
+                Comerciante().run()
             elif menu_option == 2:
-                login_consumidor = Consumidor()
-                login_consumidor.run()
+                #password
+                Consumidor().run()
             else:
                 print('Ecolha invalida. Tente novamente')
                 continue

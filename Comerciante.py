@@ -1,5 +1,6 @@
 from codigo.Cadastrar import Cadastrar
 from codigo.Const import LOTE_GERAL
+from codigo.Consultar import Consultar
 
 
 class Comerciante:
@@ -14,16 +15,20 @@ class Comerciante:
             print('3. Remover peça')
             print('4. Voltar ao inicio')
             print('5. Fechar Aplicativo')
+
             opcao = int(input('>>'))
-            print()
+
             if opcao == 1:
                 LOTE_GERAL[0] += 1
-                novo_cadastro = Cadastrar
-                novo_cadastro.run(LOTE_GERAL)
+                cadastro = Cadastrar()
+                cadastro.run(LOTE_GERAL)
+                continue
             elif opcao == 2:
-                pass
+                Consultar().run()
+                continue
             elif opcao == 3:
-                pass
+
+                continue
             elif opcao == 4:
                 pass
             elif opcao == 5:
