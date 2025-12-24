@@ -1,5 +1,5 @@
 
-from codigo.Const import LISTA_PECA
+from codigo.Const import PECA_SUPERIOR, PECA_INFERIROR, CALCADO, ACESSORIO, EQUIPAMENTO_ELETRONICO
 
 class Cadastrar:
 
@@ -25,7 +25,19 @@ class Cadastrar:
             'Valor': valor,
             'Lote': lote[0]
         }
-
-        LISTA_PECA.append(peca.copy())
+        match classificador:
+            case 1:
+                PECA_SUPERIOR.append(peca)
+                print()
+            case 2:
+                PECA_INFERIROR.append(peca)
+            case 3:
+                CALCADO.append(peca)
+            case 4:
+                ACESSORIO.append(peca)
+            case 5:
+                EQUIPAMENTO_ELETRONICO.append(peca)
+            case _:
+                print('Opção inválida, tente novamente')
         print('\nProduto cadastrado com sucesso!')
 

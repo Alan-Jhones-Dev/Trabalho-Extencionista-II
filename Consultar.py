@@ -1,9 +1,10 @@
-from codigo.Const import LISTA_PECA
+from codigo.Const import PECA_SUPERIOR, PECA_INFERIROR, CALCADO, ACESSORIO, EQUIPAMENTO_ELETRONICO
+
+
 class Consultar:
     def __init__(self):
         pass
 
-#A CLASSE CONSULTAR NÃO ESTA MONSTRANDO TODOS OS PRODUTOS CLASSIFICADOS NA CATEGORIA ESCOLHIDA:
 
     def run(self):
         while True:
@@ -19,23 +20,22 @@ class Consultar:
             classificar = int(input('Qual classificação está a peça desejada?'))
             print()
 
-            if 1 <= classificar <= 5:
-                s_regiao = classificar
-                peca = next((p for p in LISTA_PECA if p['Regiao'] == s_regiao), None)
-
-                if peca is not None:
-                    print('\n Peças em estoque:\n')
-                    for keys, value in peca.items():
-                        print(f'{keys} = {value}\n')
-
-                else:
-                    print('Peça não encontrada')
-                    continue
-                    print()
-
-            elif classificar == 6:
-                print()
-            else:
-                print('Escolha um valor entre 1 á 6')
-                continue
-            print()
+            match classificar:
+                case 1:
+                    print(PECA_SUPERIOR)
+                    break
+                case 2:
+                    print(PECA_INFERIROR)
+                    break
+                case 3:
+                    print(CALCADO)
+                    break
+                case 4:
+                    print(ACESSORIO)
+                    break
+                case 5:
+                    print(EQUIPAMENTO_ELETRONICO)
+                    break
+                case _:
+                    print('classificação invalida')
+                    break
