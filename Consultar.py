@@ -20,22 +20,33 @@ class Consultar:
             classificar = int(input('Qual classificação está a peça desejada?'))
             print()
 
-            match classificar:
-                case 1:
-                    print(PECA_SUPERIOR)
-                    break
-                case 2:
-                    print(PECA_INFERIROR)
-                    break
-                case 3:
-                    print(CALCADO)
-                    break
-                case 4:
-                    print(ACESSORIO)
-                    break
-                case 5:
-                    print(EQUIPAMENTO_ELETRONICO)
-                    break
-                case _:
-                    print('classificação invalida')
-                    break
+            if classificar == 1:
+                estoque = 'Não contem peças no estoque' if not PECA_SUPERIOR else PECA_SUPERIOR
+                print(estoque)
+                print()
+                break
+            elif classificar == 2:
+                estoque = 'Não contem peças no estoque' if not PECA_INFERIROR else PECA_INFERIROR
+                print(estoque)
+                print()
+                break
+            elif classificar == 3:
+                estoque = 'Não contem peças no estoque' if not CALCADO else CALCADO
+                print(estoque)
+                print()
+                break
+            elif classificar == 4:
+                estoque = 'Não contem peças no estoque' if not ACESSORIO else ACESSORIO
+                print(estoque)
+                print()
+                break
+            elif classificar == 5:
+                estoque = 'Não contem peças no estoque' if not EQUIPAMENTO_ELETRONICO else EQUIPAMENTO_ELETRONICO
+                print(estoque)
+                print()
+                break
+            elif classificar == 6:
+                break
+            else:
+                print('Classificação invalida!')
+                continue

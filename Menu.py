@@ -8,16 +8,22 @@ class Menu:
 
     def run(self):
         while True:
-            print(' 1 . Comerciante: \n',
-                  '2 . Consumidor:')
+            try:
+                print(' 1 . Comerciante: \n',
+                      '2 . Consumidor:')
 
-            menu_option = int(input('>>'))
-            if menu_option == 1:
-                #password
-                Comerciante().run()
-            elif menu_option == 2:
-                #password
-                Consumidor().run()
-            else:
-                print('Ecolha invalida. Tente novamente')
+                menu_option = int(input('>>'))
+                if menu_option == 1:
+                    #password
+                    Comerciante().run()
+                elif menu_option == 2:
+                    #password
+                    Consumidor().run()
+                else:
+                    print('Ecolha invalida. Tente novamente')
+                    continue
+            except ValueError:
+                print('Valor invalido! Escolha apenas um dos numeros do painel abaixo:')
                 continue
+
+
