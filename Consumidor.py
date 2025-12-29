@@ -1,5 +1,6 @@
 from codigo.Consultar import Consultar
 from codigo.Reservar import Reservar
+from codigo.cancelarReserva import CancelarReserva
 
 
 class Consumidor:
@@ -23,7 +24,8 @@ class Consumidor:
                 Reservar().run()
                 continue
             elif opcao == 3:
-                pass
+                CancelarReserva().run()
+                continue
             elif opcao == 4:
                 raise SystemExit('Programa encerrado com sucesso')
 

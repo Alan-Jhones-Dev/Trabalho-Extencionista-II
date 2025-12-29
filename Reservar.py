@@ -16,10 +16,10 @@ class Reservar:
         produto = next((p for p in lista_produtos if p['Lote'] == lote), None)
 
         if produto is None:
-            print('❌ Lote inexistente.')
+            print('Lote inexistente.')
         else:
             LISTA_RESERVA.append(produto)
-            print('✅ Produto reservado com sucesso!')
+            print('Produto reservado com sucesso!')
             print('Lista de reservas:')
             print(LISTA_RESERVA)
 
