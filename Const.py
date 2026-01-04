@@ -1,18 +1,17 @@
-#A
+# A
 ACESSORIO = []
 
-#C
-CALCADO =[]
+# C
+CALCADO = []
 
-#E
-EQUIPAMENTO_ELETRONICO=[]
-#M
+# E
+EQUIPAMENTO_ELETRONICO = []
+# M
 
-#L
+# L
 LOTE_GERAL = [0]
 LISTA_RESERVA = []
 
-
-#P
+# P
 PECA_SUPERIOR = []
 PECA_INFERIROR = []

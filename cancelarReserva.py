@@ -1,5 +1,6 @@
 from codigo.Const import LISTA_RESERVA
 
+
 class CancelarReserva:
     def __init__(self):
         pass
@@ -17,7 +18,6 @@ class CancelarReserva:
             print('lista de reservas atualizadas:')
             print(LISTA_RESERVA)
 
-
     def run(self):
         if not LISTA_RESERVA:
             print('Não existem produtos reservados"')
@@ -31,6 +31,3 @@ class CancelarReserva:
 
             self.RemoverProduto(produto)
             break
-
-
-

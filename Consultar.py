@@ -5,6 +5,9 @@ class Consultar:
     def __init__(self):
         pass
 
+    def consultando(self, lista_consulta): # VERIFICA SE EXISTEM PEÇAS NA LISTA ESCOLHIDA
+        produto = 'Não contem peças no estoque' if not lista_consulta else lista_consulta # CONSULTA COM OPERADOR TERNARIO
+        print(produto)
 
     def run(self):
         while True:
@@ -17,33 +20,23 @@ class Consultar:
             print('6. Retornar')
             print()
 
-            classificar = int(input('Qual classificação está a peça desejada?'))
-            print()
+            classificar = int(input('Qual classificação está a peça desejada?\n'))
+
 
             if classificar == 1:
-                estoque = 'Não contem peças no estoque' if not PECA_SUPERIOR else PECA_SUPERIOR
-                print(estoque)
-                print()
+                self.consultando(PECA_SUPERIOR)
                 break
             elif classificar == 2:
-                estoque = 'Não contem peças no estoque' if not PECA_INFERIROR else PECA_INFERIROR
-                print(estoque)
-                print()
+                self.consultando(PECA_INFERIROR)
                 break
             elif classificar == 3:
-                estoque = 'Não contem peças no estoque' if not CALCADO else CALCADO
-                print(estoque)
-                print()
+                self.consultando(CALCADO)
                 break
             elif classificar == 4:
-                estoque = 'Não contem peças no estoque' if not ACESSORIO else ACESSORIO
-                print(estoque)
-                print()
+                self.consultando(ACESSORIO)
                 break
             elif classificar == 5:
-                estoque = 'Não contem peças no estoque' if not EQUIPAMENTO_ELETRONICO else EQUIPAMENTO_ELETRONICO
-                print(estoque)
-                print()
+                self.consultando(EQUIPAMENTO_ELETRONICO)
                 break
             elif classificar == 6:
                 break

@@ -1,5 +1,5 @@
-
 from codigo.Const import PECA_SUPERIOR, PECA_INFERIROR, CALCADO, ACESSORIO, EQUIPAMENTO_ELETRONICO, LISTA_RESERVA
+
 
 class Reservar:
     def __init__(self):

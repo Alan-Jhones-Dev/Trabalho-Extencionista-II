@@ -6,9 +6,7 @@ from codigo.Consultar import Consultar
 from codigo.Remover import Remover
 
 
-
 # ADICIONADO O TOPICO '4. VOLTAR' NA ESCOLHA DE OPCAO PARA REALIZAR TESTES. LEMBRAR DE REMOVER
-
 
 
 class Comerciante:
